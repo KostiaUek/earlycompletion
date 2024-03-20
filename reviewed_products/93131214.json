@@ -1,0 +1,107 @@
+[
+    {
+        "opinion_id": "16775677",
+        "author_name": "\ns...a",
+        "author_recommendation": "\nPolecam\n",
+        "post_text": "Jakość wydania dobra",
+        "score": "4,5/5",
+        "positives": [
+            "jakość wydania"
+        ],
+        "negatives": [],
+        "positives_count": 1,
+        "negatives_count": 0,
+        "likes": "0",
+        "dislikes": "0",
+        "post_time": "2022-11-22 10:41:26",
+        "purchase_date": "2022-11-02 12:14:17"
+    },
+    {
+        "opinion_id": "18396063",
+        "author_name": "\ng...z",
+        "author_recommendation": "\nPolecam\n",
+        "post_text": "ok",
+        "score": "5/5",
+        "positives": [],
+        "negatives": [],
+        "positives_count": 0,
+        "negatives_count": 0,
+        "likes": "0",
+        "dislikes": "0",
+        "post_time": "2024-02-14 08:05:45",
+        "purchase_date": "2024-01-14 16:15:23"
+    },
+    {
+        "opinion_id": "15946085",
+        "author_name": "\nUżytkownik Ceneo",
+        "author_recommendation": "\nPolecam\n",
+        "post_text": "Porywająca i kompetentna lektura.",
+        "score": "5/5",
+        "positives": [
+            "akcja",
+            "fabuła",
+            "jakość wydania"
+        ],
+        "negatives": [],
+        "positives_count": 3,
+        "negatives_count": 0,
+        "likes": "0",
+        "dislikes": "0",
+        "post_time": "2022-04-11 17:11:05",
+        "purchase_date": ""
+    },
+    {
+        "opinion_id": "15653072",
+        "author_name": "\nUżytkownik Ceneo",
+        "author_recommendation": "\nNie polecam\n",
+        "post_text": "sprzedawali książkę, dostałam płytę. ",
+        "score": "1/5",
+        "positives": [],
+        "negatives": [],
+        "positives_count": 0,
+        "negatives_count": 0,
+        "likes": "0",
+        "dislikes": "0",
+        "post_time": "2022-02-03 19:19:10",
+        "purchase_date": "2022-01-23 13:20:13"
+    },
+    {
+        "opinion_id": "14054753",
+        "author_name": "\na...i",
+        "author_recommendation": "\nNie polecam\n",
+        "post_text": "Super",
+        "score": "0,5/5",
+        "positives": [
+            "akcja",
+            "fabuła",
+            "jakość wydania"
+        ],
+        "negatives": [],
+        "positives_count": 3,
+        "negatives_count": 0,
+        "likes": "0",
+        "dislikes": "0",
+        "post_time": "2021-03-04 05:29:32",
+        "purchase_date": "2021-02-12 22:04:09"
+    },
+    {
+        "opinion_id": "13798697",
+        "author_name": "\nUżytkownik Ceneo",
+        "author_recommendation": "\nNie polecam\n",
+        "post_text": "Autorka niestety ślizga się po tematach. Dzieła opisane są słabo,  mało interesująco. Powiązania pomiędzy dziełami mało spójne. Generalnie zawiodłam się.  ",
+        "score": "1/5",
+        "positives": [
+            "jakość wydania"
+        ],
+        "negatives": [
+            "akcja",
+            "fabuła"
+        ],
+        "positives_count": 1,
+        "negatives_count": 2,
+        "likes": "0",
+        "dislikes": "0",
+        "post_time": "2021-01-19 14:39:56",
+        "purchase_date": ""
+    }
+]

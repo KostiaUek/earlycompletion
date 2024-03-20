@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <!-- jQuery and DataTables JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5; /* Milk white background */
+        }
+        h1 {
+            text-align: center;
+            color: #007bff; /* Blueish accent */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0; /* Light gray background for table headers */
+        }
+        .options {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .options a, .options button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007bff; /* Blueish accent */
+            color: #fff; /* White text color */
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .options a:hover, .options button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Reviews</h1>
+    <table id="reviewsTable" class="display">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Author Name</th>
+                <th>Recommendation</th>
+                <th>Post Text</th>
+                <th>Score</th>
+                <th>Likes</th>
+                <th>Dislikes</th>
+                <th>Post Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for review in reviews %}
+            <tr>
+                <td>{{ review.opinion_id }}</td>
+                <td>{{ review.author_name }}</td>
+                <td>{{ review.author_recommendation }}</td>
+                <td>{{ review.post_text }}</td>
+                <td>{{ review.score }}</td>
+                <td>{{ review.likes }}</td>
+                <td>{{ review.dislikes }}</td>
+                <td>{{ review.post_time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="options">
+        <h2>Download options</h2>
+        <a href="{{ url_for('download_opinions', product_id=product_id, format='csv') }}">CSV</a>
+        <a href="{{ url_for('download_opinions', product_id=product_id, format='xlsx') }}">XLSX</a>
+        <a href="{{ url_for('download_opinions', product_id=product_id, format='json') }}">JSON</a>
+    </div>
+    <div class="options">
+        <h2>Other options</h2>
+        <button onclick="window.location.href='/'">Home</button>
+        <button onclick="window.location.href='/charts/{{ product_id }}'">Charts</button>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#reviewsTable').DataTable();
+        });
+    </script>
+</body>
+</html>
